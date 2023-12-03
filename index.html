@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
+      integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+
+    <title>Ivan Tančik - Resume</title>
+
+    <style>
+      a {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        color: rgb(120, 120, 120) !important;
+      }
+
+      a i {
+        visibility: hidden;
+      }
+
+      a:hover i {
+        visibility: visible;
+      }
+
+      .fa-print:hover {
+        color: rgb(120, 120, 120);
+      }
+
+      .back-to-top {
+        position: sticky;
+        bottom: 30px;
+        left: calc(100vw - 50px);
+        margin-top: calc(100vh + 50px);
+      }
+
+      #profile {
+        background: transparent
+          url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10rem' height='10rem'><linearGradient id='gradient'><stop offset='10%' stop-color='%23cccccc'/><stop offset='90%' stop-color='%23000'/> </linearGradient><rect fill='url(%23gradient)' x='0' y='0' width='100%' height='100%'/></svg>")
+          no-repeat scroll center center;
+      }
+
+      @media print {
+        * {
+          color: #000 !important;
+        }
+
+        a i {
+          visibility: visible;
+        }
+
+        table {
+          font-size: 0.95rem;
+        }
+
+        [class^='bg-'] {
+          background-color: #fff !important;
+        }
+
+        .row {
+          flex-direction: column-reverse;
+        }
+
+        /* .no-page-break {
+        page-break-inside: avoid;
+      } */
+
+        #article {
+          margin-top: 0 !important;
+          padding-top: 0 !important;
+          margin-bottom: 0 !important;
+          padding-bottom: 0 !important;
+        }
+
+        #aside {
+          margin-top: 0 !important;
+          padding-top: 0 !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-secondary">
+    <main class="container">
+      <div class="row">
+        <!-- Aside START -->
+        <aside
+          id="aside"
+          class="bg-dark text-light rounded col-lg-4 col-12 mt-4 p-4"
+        >
+          <div id="card" class="card mx-auto mb-4" style="width: 16rem">
+            <div class="card-body">
+              <img
+                id="profile"
+                src="https://drive.google.com/uc?id=19gkaUvpHb9Uey0RbhvISkiitwWy-8Fnz"
+                class="img-fluid rounded-circle d-block mx-auto mb-2"
+                alt=""
+                style="width: 10rem; height: 10rem"
+              />
+              <h2 class="text-dark text-center">Ivan Tančik</h2>
+              <p class="card-text text-dark text-center">
+                A challenge-loving web developer
+              </p>
+            </div>
+          </div>
+          <div title="Print" class="d-print-none text-center">
+            <i
+              id="print-resume"
+              role="button"
+              class="fa-solid fa-print fs-1"
+            ></i>
+          </div>
+          <!-- Aside div Info START -->
+          <div class="title mt-5">
+            <h4 class="text-center">
+              <i class="fa-solid fa-circle-info"></i>&nbsp; Info
+            </h4>
+            <hr class="bg-light" />
+
+            <div class="container">
+              <div class="row text-center align-items-center flex-row">
+                <div class="col-lg-12 col-6">
+                  <p class="mb-0">
+                    <i class="fa-solid fa-envelope"></i>&nbsp; Email:
+                  </p>
+                  <p>
+                    <a
+                      class="text-reset icon-link icon-link-hover"
+                      href="javascript:"
+                      data-email="itancik[at]gmail[dot]com"
+                    ></a>
+                  </p>
+                </div>
+                <div class="col-lg-12 col-6">
+                  <p class="mb-0">
+                    <i class="fa-solid fa-phone"></i>&nbsp; Phone:
+                  </p>
+                  <p>
+                    <a
+                      class="text-reset icon-link icon-link-hover"
+                      href="javascript:"
+                      data-tel="[country][operator][number]"
+                    ></a>
+                  </p>
+                </div>
+                <div class="col-lg-12 col-6">
+                  <p class="mb-0">
+                    <i class="fa-brands fa-github"></i>&nbsp; GitHub:
+                  </p>
+                  <p>
+                    <a
+                      class="text-reset"
+                      href="https://github.com/it-drafter"
+                      target="_blank"
+                      >github.com/it-drafter</a
+                    >
+                  </p>
+                </div>
+                <div class="col-lg-12 col-6">
+                  <p class="mb-0">
+                    <i class="fa-brands fa-linkedin"></i>&nbsp; LinkedIn:
+                  </p>
+                  <p>
+                    <a
+                      class="text-reset"
+                      href="https://www.linkedin.com/in/ivantancsik"
+                      target="_blank"
+                      >linkedin.com/in/ivantancsik</a
+                    >
+                  </p>
+                </div>
+                <div class="col-lg-12 col-6">
+                  <p class="mb-0">
+                    <i class="fa-regular fa-building"></i>&nbsp; Current
+                    Residence:
+                  </p>
+                  <p>Novi Sad / Serbia</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Aside div Info END -->
+          <!-- Aside div Long-term career goals START -->
+          <div class="title mt-5">
+            <h5 class="text-center">
+              <i class="fa-solid fa-bullseye"></i>&nbsp; Long-term career goals
+            </h5>
+            <hr class="bg-light" />
+            <table class="table-text mx-auto">
+              <tr>
+                <td class="text-start pb-3">
+                  <i class="fa-solid fa-minus"></i>
+                </td>
+                <td class="text-start pb-0 ps-3 pb-3">
+                  Pursuing my passion - web programming
+                </td>
+              </tr>
+              <tr>
+                <td class="text-start pb-3">
+                  <i class="fa-solid fa-minus"></i>
+                </td>
+                <td class="text-start pb-0 ps-3 pb-3">
+                  Becoming a full-stack web developer
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- Aside div Long-term career goals END -->
+          <!-- Aside div Certificates & Achievements START -->
+          <div class="title mt-5">
+            <h5 class="text-center">
+              <i class="fa-solid fa-certificate"></i>&nbsp; Certificates &
+              Achievements
+            </h5>
+            <hr class="bg-light" />
+            <table class="table-text mx-auto">
+              <tr>
+                <td class="text-start pb-3">2022:</td>
+                <td class="text-start pb-0 ps-3 pb-3">
+                  <a
+                    class="text-reset"
+                    href="https://drive.google.com/file/d/1llDkfX7uu3fH_gCp3AdQG6z4yv0wML6b/view?usp=sharing"
+                    target="_blank"
+                    >AZ-900 Certificate: Microsoft Azure Fundamentals&nbsp;
+                    <i class="fa-solid fa-up-right-from-square"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-start pb-3">2022:</td>
+                <td class="text-start pb-0 ps-3 pb-3">
+                  <a
+                    class="text-reset"
+                    href="https://drive.google.com/file/d/1LlyriBJhBAlCZMsYZnxEldVHnu-BQmss/view?usp=sharing"
+                    target="_blank"
+                    >DP-900 Certificate: Microsoft Azure Data Fundamentals&nbsp;
+                    <i class="fa-solid fa-up-right-from-square"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-start pb-3">2022:</td>
+                <td class="text-start pb-0 ps-3 pb-3">
+                  <a
+                    class="text-reset"
+                    href="https://drive.google.com/file/d/1X6oVMHGye3_5KRTC0s0r37Y30V7-j5pJ/view?usp=sharing"
+                    target="_blank"
+                    >AI-900 Certificate: Microsoft Azure AI Fundamentals&nbsp;
+                    <i class="fa-solid fa-up-right-from-square"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-start pb-3">2009:</td>
+                <td class="text-start pb-0 ps-3 pb-3">
+                  <a
+                    class="text-reset"
+                    href="https://drive.google.com/file/d/1Cf7QND4QjkT5qcRDRN4aRCMmo5cezuS6/view?usp=sharing"
+                    target="_blank"
+                    >ECDL Certificate&nbsp;
+                    <i class="fa-solid fa-up-right-from-square"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-start pb-3">2005:</td>
+                <td class="text-start pb-0 ps-3 pb-3">
+                  <a
+                    class="text-reset"
+                    href="https://drive.google.com/file/d/1xTMgWCfwRvumpdaIorxEwcsT_wDtadx3/view?usp=sharing"
+                    target="_blank"
+                    >Won the third place at the state competition in Business
+                    Informatics&nbsp;
+                    <i class="fa-solid fa-up-right-from-square"></i
+                  ></a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- Aside div Certificates & Achievements END -->
+          <!-- Aside div Languages START -->
+          <div class="title mt-5">
+            <h4 class="text-center">
+              <i class="fa-solid fa-language"></i>&nbsp; Languages
+            </h4>
+            <hr class="bg-light" />
+            <table class="table-text mx-auto">
+              <tr>
+                <td class="text-end p-1">
+                  <i class="fa-solid fa-language"></i>
+                </td>
+                <td class="text-start p-1 pe-4">Serbian</td>
+                <td class="text-end p-1 ps-4">
+                  <i class="fa-solid fa-language"></i>
+                </td>
+                <td class="text-start p-1">English</td>
+              </tr>
+              <tr>
+                <td class="text-end p-1">
+                  <i class="fa-solid fa-language"></i>
+                </td>
+                <td class="text-start p-1 pe-4">Hungarian</td>
+                <td class="text-end p-1 ps-4">
+                  <i class="fa-solid fa-language"></i>
+                </td>
+                <td class="text-start p-1">German</td>
+              </tr>
+            </table>
+          </div>
+          <!-- Aside div Languages END -->
+          <!-- Aside div Hobbies START -->
+          <div class="title mt-5">
+            <h4 class="text-center">
+              <i class="fa-regular fa-futbol"></i>&nbsp; Hobbies
+            </h4>
+            <hr class="bg-light" />
+            <table class="table-text mx-auto">
+              <tr>
+                <td class="text-start pb-3">
+                  <i class="fa-solid fa-person-running"></i>
+                </td>
+                <td class="text-start pb-0 ps-2 pb-3">Long distance running</td>
+              </tr>
+              <tr>
+                <td class="text-start pb-3">
+                  <i class="fa-solid fa-bolt"></i>
+                </td>
+                <td class="text-start pb-0 ps-2 pb-3">
+                  Electrics & electronics
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- Aside div Hobbies END -->
+        </aside>
+        <!-- Aside END -->
+
+        <!-- Article START -->
+        <article id="article" class="bg-light rounded col-lg-8 col-12 mt-4 p-4">
+          <!-- Section Who am I? START -->
+          <section class="mb-5">
+            <h4 class="title font-weight-light mb-1">
+              <i class="fa-regular fa-face-smile"></i>&nbsp; Who am I?
+            </h4>
+            <hr />
+            <p class="mb-2">
+              I am a Front-End developer interested in different areas of IT -
+              including, but not limited to:
+            </p>
+            <table class="table table-sm table-hover">
+              <tr>
+                <td class="text-end">
+                  <i class="fa-brands fa-internet-explorer"></i>
+                </td>
+                <td class="text-start">Web development</td>
+                <td class="text-end">
+                  <i class="fa-solid fa-mobile-screen"></i>
+                </td>
+                <td class="text-start">Mobile app development</td>
+              </tr>
+              <tr>
+                <td class="text-end">
+                  <i class="fa-solid fa-network-wired"></i>
+                </td>
+                <td class="text-start">Network administration</td>
+                <td class="text-end"><i class="fa-solid fa-database"></i></td>
+                <td class="text-start">Databases</td>
+              </tr>
+              <tr>
+                <td class="text-end"><i class="fa-solid fa-chart-line"></i></td>
+                <td class="text-start">Data analysis</td>
+                <td class="text-end"></td>
+                <td class="text-start"></td>
+              </tr>
+            </table>
+          </section>
+          <!-- Section Who am I? END -->
+          <!-- Section Skills and Expertize START -->
+          <section class="mb-5">
+            <h4 class="title font-weight-light mb-1">
+              <i class="fa-solid fa-screwdriver-wrench"></i>&nbsp; Skills and
+              Expertize
+            </h4>
+            <hr />
+            <table class="table table-sm table-hover">
+              <tr>
+                <td class="text-center"><i class="fa-brands fa-react"></i></td>
+                <td class="text-start">React (Web & Native)</td>
+                <td class="text-center"><i class="fa-brands fa-vuejs"></i></td>
+                <td class="text-start">Vue</td>
+              </tr>
+              <tr>
+                <td class="text-center"><i class="fa-brands fa-sass"></i></td>
+                <td>SASS</td>
+                <td class="text-center"><i class="fa-brands fa-js"></i></td>
+                <td class="text-start">Vanilla JS</td>
+              </tr>
+              <tr>
+                <td class="text-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="15px"
+                    viewBox="0 0 15 14"
+                    version="1.1"
+                  >
+                    <g id="surface1">
+                      <path
+                        style="
+                          stroke: none;
+                          fill-rule: evenodd;
+                          fill: rgb(0%, 0%, 0%);
+                          fill-opacity: 1;
+                        "
+                        d="M 14.652344 10.386719 L 14.585938 10.550781 C 13.441406 12.648438 11.414062 13.933594 8.523438 13.992188 C 7.171875 14.015625 5.882812 13.691406 5.039062 13.335938 C 3.222656 12.570312 1.695312 11.144531 0.863281 9.625 C -0.332031 7.445312 -0.550781 4.410156 1.9375 2.144531 C 1.976562 2.144531 1.636719 2.636719 1.675781 2.636719 L 1.605469 2.847656 C -0.1875 8.128906 5.335938 12.652344 10.707031 12.136719 C 11.996094 12.011719 13.640625 11.34375 14.652344 10.386719 Z M 14.652344 10.386719 Z M 14.652344 10.386719 "
+                      />
+                      <path
+                        style="
+                          stroke: none;
+                          fill-rule: evenodd;
+                          fill: rgb(0%, 0%, 0%);
+                          fill-opacity: 1;
+                        "
+                        d="M 11.402344 8.203125 C 12.753906 8.214844 14.164062 7.617188 15 6.785156 C 14.269531 8.53125 12.152344 9.652344 9.3125 9.296875 C 6.9375 8.996094 4.675781 6.746094 4.441406 4.488281 C 4.269531 2.847656 4.878906 1.871094 5.878906 0.679688 C 5.53125 1.300781 5.402344 1.78125 5.371094 2.085938 C 4.988281 5.640625 8.382812 8.183594 11.402344 8.203125 Z M 11.402344 8.203125 Z M 11.402344 8.203125 "
+                      />
+                      <path
+                        style="
+                          stroke: none;
+                          fill-rule: evenodd;
+                          fill: rgb(0%, 0%, 0%);
+                          fill-opacity: 1;
+                        "
+                        d="M 14.863281 3.796875 C 14.65625 4.25 13.445312 5.105469 12.910156 5.210938 C 10.796875 5.636719 9.445312 4.691406 8.734375 3.617188 C 8.628906 3.457031 8.433594 3.019531 8.398438 2.910156 C 8.125 2.027344 8.25 0.699219 9.070312 0.0078125 C 8.824219 0.664062 8.785156 1.425781 8.917969 1.917969 C 8.996094 2.21875 9.234375 2.742188 9.476562 3.070312 C 9.914062 3.667969 10.191406 3.8125 10.753906 4.128906 C 11.007812 4.273438 11.277344 4.386719 11.394531 4.421875 C 11.925781 4.566406 13.050781 4.957031 14.863281 3.796875 Z M 14.863281 3.796875 Z M 14.863281 3.796875 "
+                      />
+                    </g>
+                  </svg>
+                </td>
+                <td class="text-start">jQuery</td>
+                <td class="text-center">
+                  <?xml version="1.0" encoding="UTF-8"?>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="15px"
+                    viewBox="0 0 15 14"
+                    version="1.1"
+                  >
+                    <g id="surface1">
+                      <path
+                        style="
+                          stroke: none;
+                          fill-rule: evenodd;
+                          fill: rgb(0%, 0%, 0%);
+                          fill-opacity: 1;
+                        "
+                        d="M 2.84375 6.492188 L 10.839844 6.492188 L 10.839844 4.253906 L 8.359375 4.253906 C 8.101562 4.253906 7.738281 4.121094 7.566406 3.957031 C 7.394531 3.796875 7.289062 3.503906 7.289062 3.253906 L 7.289062 0.871094 L 0.980469 0.871094 C 0.960938 0.871094 0.941406 0.882812 0.929688 0.890625 C 0.914062 0.902344 0.910156 0.917969 0.910156 0.9375 L 0.910156 13.066406 C 0.910156 13.082031 0.921875 13.105469 0.929688 13.113281 C 0.941406 13.128906 0.964844 13.136719 0.980469 13.136719 C 3.71875 13.136719 7.957031 13.136719 10.769531 13.136719 C 10.789062 13.136719 10.789062 13.125 10.800781 13.113281 C 10.816406 13.105469 10.839844 13.082031 10.839844 13.066406 L 10.839844 11.796875 L 2.84375 11.796875 C 2.347656 11.796875 1.9375 11.40625 1.9375 10.933594 L 1.9375 7.355469 C 1.9375 6.882812 2.34375 6.492188 2.84375 6.492188 Z M 5.480469 9.679688 L 4.4375 9.679688 L 4.285156 10.144531 L 3.34375 10.144531 L 4.46875 7.3125 L 5.480469 7.3125 L 6.597656 10.144531 L 5.632812 10.144531 Z M 5.285156 9.066406 L 4.960938 8.046875 L 4.632812 9.066406 Z M 6.941406 7.3125 L 7.773438 7.3125 L 7.773438 7.851562 L 6.941406 7.851562 Z M 6.941406 8.089844 L 7.773438 8.089844 L 7.773438 10.082031 C 7.773438 10.335938 7.753906 10.515625 7.714844 10.621094 C 7.675781 10.726562 7.605469 10.8125 7.5 10.878906 C 7.394531 10.945312 7.246094 10.976562 7.050781 10.976562 C 6.890625 10.976562 6.691406 10.957031 6.453125 10.910156 L 6.578125 10.335938 C 6.644531 10.347656 6.695312 10.355469 6.726562 10.355469 C 6.796875 10.355469 6.851562 10.332031 6.886719 10.289062 C 6.925781 10.242188 6.941406 10.152344 6.941406 10.015625 Z M 9.058594 8.757812 L 8.265625 8.679688 C 8.292969 8.546875 8.339844 8.441406 8.394531 8.367188 C 8.449219 8.292969 8.53125 8.226562 8.636719 8.171875 C 8.714844 8.128906 8.820312 8.097656 8.953125 8.078125 C 9.085938 8.054688 9.230469 8.046875 9.382812 8.046875 C 9.632812 8.046875 9.832031 8.058594 9.980469 8.085938 C 10.132812 8.113281 10.257812 8.167969 10.359375 8.25 C 10.429688 8.308594 10.484375 8.390625 10.523438 8.496094 C 10.566406 8.605469 10.585938 8.703125 10.585938 8.800781 L 10.585938 9.710938 C 10.585938 9.808594 10.59375 9.882812 10.605469 9.9375 C 10.617188 9.992188 10.648438 10.0625 10.691406 10.148438 L 9.914062 10.148438 C 9.878906 10.09375 9.859375 10.054688 9.851562 10.027344 C 9.84375 10 9.832031 9.957031 9.824219 9.898438 C 9.714844 9.996094 9.605469 10.066406 9.5 10.109375 C 9.351562 10.164062 9.179688 10.195312 8.988281 10.195312 C 8.730469 10.195312 8.535156 10.136719 8.398438 10.023438 C 8.265625 9.910156 8.199219 9.769531 8.199219 9.601562 C 8.199219 9.445312 8.246094 9.316406 8.34375 9.21875 C 8.441406 9.117188 8.617188 9.042969 8.878906 8.992188 C 9.1875 8.933594 9.390625 8.890625 9.484375 8.867188 C 9.574219 8.84375 9.671875 8.8125 9.777344 8.773438 C 9.777344 8.675781 9.757812 8.609375 9.714844 8.570312 C 9.671875 8.53125 9.597656 8.515625 9.492188 8.515625 C 9.355469 8.515625 9.257812 8.535156 9.1875 8.578125 C 9.132812 8.605469 9.089844 8.667969 9.058594 8.757812 Z M 9.777344 9.167969 C 9.664062 9.207031 9.542969 9.242188 9.417969 9.269531 C 9.25 9.3125 9.140625 9.355469 9.097656 9.398438 C 9.050781 9.441406 9.027344 9.488281 9.027344 9.542969 C 9.027344 9.605469 9.050781 9.660156 9.097656 9.699219 C 9.144531 9.738281 9.210938 9.757812 9.296875 9.757812 C 9.390625 9.757812 9.476562 9.734375 9.558594 9.691406 C 9.636719 9.648438 9.691406 9.597656 9.726562 9.535156 C 9.761719 9.472656 9.777344 9.390625 9.777344 9.292969 Z M 10.894531 8.089844 L 11.878906 8.089844 L 12.222656 8.664062 L 12.621094 8.089844 L 13.535156 8.089844 L 12.800781 9.070312 L 13.589844 10.144531 L 12.621094 10.144531 L 12.222656 9.484375 L 11.75 10.144531 L 10.851562 10.144531 L 11.640625 9.070312 Z M 11.746094 6.492188 L 14.089844 6.492188 C 14.589844 6.492188 14.996094 6.882812 14.996094 7.355469 L 14.996094 10.933594 C 14.996094 11.40625 14.585938 11.796875 14.089844 11.796875 L 11.746094 11.796875 L 11.746094 13.339844 C 11.746094 13.523438 11.667969 13.683594 11.539062 13.808594 C 11.414062 13.925781 11.242188 14 11.046875 14 C 7.511719 14 4.25 14 0.699219 14 C 0.503906 14 0.332031 13.929688 0.207031 13.808594 C 0.078125 13.683594 0.00390625 13.523438 0.00390625 13.335938 L 0.00390625 0.667969 C 0.00390625 0.484375 0.078125 0.320312 0.207031 0.199219 C 0.335938 0.078125 0.511719 0.00390625 0.699219 0.00390625 L 7.75 0.00390625 C 7.765625 0 7.785156 0 7.800781 0 C 7.878906 0 7.957031 0.03125 8.011719 0.078125 L 8.023438 0.078125 C 8.035156 0.0859375 8.039062 0.0898438 8.050781 0.0976562 L 11.652344 3.558594 C 11.714844 3.617188 11.757812 3.695312 11.757812 3.785156 C 11.757812 3.8125 11.75 3.832031 11.746094 3.859375 Z M 8.109375 3.1875 L 8.109375 1.019531 L 10.683594 3.492188 L 8.429688 3.492188 C 8.34375 3.492188 8.265625 3.453125 8.203125 3.402344 C 8.148438 3.347656 8.109375 3.269531 8.109375 3.1875 Z M 8.109375 3.1875 "
+                      />
+                    </g>
+                  </svg>
+                </td>
+                <td class="text-start">Ajax</td>
+              </tr>
+              <tr>
+                <td class="text-center"><i class="fa-brands fa-git"></i></td>
+                <td class="text-start">Git</td>
+                <td class="text-center">
+                  <i class="fa-brands fa-wordpress"></i>
+                </td>
+                <td class="text-start">CMS - Wordpress, SMF</td>
+              </tr>
+              <tr>
+                <td class="text-center"><i class="fa-solid fa-wifi"></i></td>
+                <td class="text-start">Networking</td>
+                <td class="text-center">
+                  <i class="fa-solid fa-database"></i>
+                </td>
+                <td class="text-start">Databases</td>
+              </tr>
+            </table>
+          </section>
+          <!-- Section Skills and Expertize END -->
+          <!-- Section Work Experience START -->
+          <section class="mb-5">
+            <h4 class="title font-weight-light mb-1">
+              <i class="fa-solid fa-briefcase"></i>&nbsp; IT-Related Work
+              Experience
+            </h4>
+            <hr />
+            <table class="table table-sm table-hover">
+              <tr>
+                <td class="text-center" style="vertical-align: middle">2023</td>
+                <td class="text-start">
+                  React Native Developer
+                  <ul class="mb-0" style="list-style-type: none">
+                    <li>
+                      - Developing and currently actively maintaining an Android
+                      app
+                    </li>
+                    <li>
+                      - The app's main feature is streaming radio and podcasts
+                    </li>
+                    <li>
+                      <a
+                        class="text-reset"
+                        href="https://github.com/it-drafter/android-audio-stream-player"
+                        target="_blank"
+                        >- Project codebase and detailed description available
+                        on GitHub&nbsp;
+                        <i class="fa-solid fa-up-right-from-square"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <em
+                    >Freelance Project for a
+                    <a
+                      class="text-reset"
+                      href="https://www.daskoimladja.com/o-nama.php"
+                      target="_blank"
+                      >Local Internet Radio Station&nbsp;
+                      <i class="fa-solid fa-up-right-from-square"></i></a
+                  ></em>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center" style="vertical-align: middle">2023</td>
+                <td class="text-start">
+                  <a
+                    class="text-reset"
+                    href="https://drive.google.com/file/d/1Z-ACJtzKbvvUOnY4WgY1Rns7I0Nz2rQa/view?usp=sharing"
+                    target="_blank"
+                    >Front-End Developer Internship - Team Lead&nbsp;
+                    <i class="fa-solid fa-up-right-from-square"></i
+                  ></a>
+                  <ul class="mb-0" style="list-style-type: none">
+                    <li>
+                      <a
+                        class="text-reset"
+                        href="https://drive.google.com/file/d/1jurNeUTIRKtes-jstx9D4hazQjGZih-r/view?usp=sharing"
+                        target="_blank"
+                        >- Letter of Recommendation&nbsp;
+                        <i class="fa-solid fa-up-right-from-square"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        class="text-reset"
+                        href="https://github.com/it-drafter/formula1"
+                        target="_blank"
+                        >- Internship project codebase and detailed description
+                        available on GitHub&nbsp;
+                        <i class="fa-solid fa-up-right-from-square"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <em>Smart School</em>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center" style="vertical-align: middle">
+                  2018 -
+                </td>
+                <td class="text-start">
+                  Network Hardware - Trade, Setup, Maintenance <br /><em
+                    >Self-Employed</em
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="text-center"
+                  style="vertical-align: middle; white-space: nowrap"
+                >
+                  2013 / 2014
+                </td>
+                <td class="text-start">
+                  IT Administrator / Analyst<br /><em
+                    >Veletabak Ltd. Novi Sad</em
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center" style="vertical-align: middle">2012</td>
+                <td class="text-start">
+                  Consultant - Assistant at the Implementation Department<br /><em
+                    >M&I Systems, Co. Ltd. Novi Sad</em
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center" style="vertical-align: middle">2011</td>
+                <td class="text-start">
+                  Demonstrator - Teaching Database Design<br /><em
+                    >University of Novi Sad, Faculty of Economics in
+                    Subotica</em
+                  >
+                </td>
+              </tr>
+            </table>
+          </section>
+          <!-- Section Work Experience END -->
+          <!-- Section Projects START -->
+          <section class="mb-5">
+            <h4 class="title font-weight-light mb-1">
+              <i class="fa-solid fa-computer"></i>&nbsp; Selected Projects
+            </h4>
+            <hr />
+            <table class="table table-sm table-hover">
+              <tr>
+                <td class="text-start" style="vertical-align: middle">
+                  Android Audio Stream Player:
+                </td>
+                <td class="text-start">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.mladjaidasko&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+                    target="_blank"
+                    ><img
+                      class="bg-black rounded"
+                      alt="Get it on Google Play"
+                      src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                      width="175px"
+                  /></a>
+                  <!-- <a class="text-reset" href="https://it-drafter.github.io/android-audio-stream-player/"
+                  target="_blank">it-drafter.github.io/android-audio-stream-player&nbsp;
+                  <i class="fa-solid fa-up-right-from-square"></i></a> -->
+                </td>
+              </tr>
+              <tr>
+                <td class="text-start" style="vertical-align: middle">
+                  Formula 1 Championship Info:
+                </td>
+                <td class="text-start">
+                  <a
+                    class="text-reset"
+                    href="https://it-drafter.github.io/formula1/"
+                    target="_blank"
+                    >it-drafter.github.io/formula1&nbsp;
+                    <i class="fa-solid fa-up-right-from-square"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-start" style="vertical-align: middle">
+                  Lucky 7 Slot Machine:
+                </td>
+                <td class="text-start">
+                  <a
+                    class="text-reset"
+                    href="https://it-drafter.github.io/lucky-7-slot-machine/"
+                    target="_blank"
+                    >it-drafter.github.io/lucky-7-slot-machine&nbsp;
+                    <i class="fa-solid fa-up-right-from-square"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-start" style="vertical-align: middle">
+                  Vanilla Calculator:
+                </td>
+                <td class="text-start">
+                  <a
+                    class="text-reset"
+                    href="https://it-drafter.github.io/vanilla-calculator/"
+                    target="_blank"
+                    >it-drafter.github.io/vanilla-calculator&nbsp;
+                    <i class="fa-solid fa-up-right-from-square"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-start" style="vertical-align: middle">
+                  Tic-Tac-Toe:
+                </td>
+                <td class="text-start">
+                  <a
+                    class="text-reset"
+                    href="https://it-drafter.github.io/tic-tac-toe/"
+                    target="_blank"
+                    >it-drafter.github.io/tic-tac-toe&nbsp;
+                    <i class="fa-solid fa-up-right-from-square"></i
+                  ></a>
+                </td>
+              </tr>
+            </table>
+          </section>
+          <!-- Section Projects END -->
+          <!-- Section Informal Education START -->
+          <section class="mb-5">
+            <h4 class="title font-weight-light mb-1">
+              <i class="fa-solid fa-chalkboard-user"></i>&nbsp; Informal
+              Education
+            </h4>
+            <hr />
+            <table class="table table-sm table-hover">
+              <tr>
+                <td class="text-center">
+                  <i class="fa-solid fa-chalkboard-user"></i>
+                </td>
+                <td colspan="3">
+                  <span class="fst-italic fw-semibold"
+                    >2022 / 2023 - Smart School:</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td colspan="3" class="text-start">
+                  <a
+                    class="text-reset"
+                    href="https://drive.google.com/file/d/1RiE-87Jdyv1IHSCv9qcD0R2lvw_6Qds9/view?usp=sharing"
+                    target="_blank"
+                    >Front-End Developer - REACT&nbsp;
+                    <i class="fa-solid fa-up-right-from-square"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center pt-4">
+                  <i class="fa-solid fa-chalkboard-user"></i>
+                </td>
+                <td colspan="3" class="pt-4">
+                  <span class="fst-italic fw-semibold">2023 - ITAcademy:</span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td colspan="3" class="text-start">WordPress</td>
+              </tr>
+              <tr>
+                <td class="text-center pt-4">
+                  <i class="fa-solid fa-chalkboard-user"></i>
+                </td>
+                <td colspan="3" class="pt-4">
+                  <span class="fst-italic fw-semibold"
+                    >2022 - Educational Centre:</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td colspan="3" class="text-start">
+                  <a
+                    class="text-reset"
+                    href="https://drive.google.com/file/d/1NHcLaxv84SXrqZjMNNRfl2i-miwGw1Hc/view?usp=sharing"
+                    target="_blank"
+                    >Web Programming and Design - Vue&nbsp;
+                    <i class="fa-solid fa-up-right-from-square"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center pt-4">
+                  <i class="fa-solid fa-chalkboard-user"></i>
+                </td>
+                <td colspan="3" class="pt-4">
+                  <span class="fst-italic fw-semibold"
+                    >2022 / 2023 - freeCodeCamp:</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="text-start">
+                  <a
+                    class="text-reset"
+                    href="https://drive.google.com/file/d/1XpH0a3Mf0wv616DWwQjgoNdLhlxWE76F/view?usp=sharing"
+                    target="_blank"
+                    >Responsive Web Design&nbsp;
+                    <i class="fa-solid fa-up-right-from-square"></i
+                  ></a>
+                </td>
+                <td colspan="2" class="text-start">
+                  <a
+                    class="text-reset"
+                    href="https://drive.google.com/file/d/1EVkE3-g-TCvznMJQVhdEmmqzEqKSLEb8/view?usp=sharing"
+                    target="_blank"
+                    >JavaScript Algorithms and Data Structures&nbsp;
+                    <i class="fa-solid fa-up-right-from-square"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="text-start">
+                  <a
+                    class="text-reset"
+                    href="https://drive.google.com/file/d/1aj5_0WXV_HWghFOeJlTgSXNISCKsLHJv/view?usp=sharing"
+                    target="_blank"
+                    >Front End Development Libraries&nbsp;
+                    <i class="fa-solid fa-up-right-from-square"></i
+                  ></a>
+                </td>
+                <td colspan="2" class="text-start">
+                  <a
+                    class="text-reset"
+                    href="https://drive.google.com/file/d/15PVrwEv7PSYhx2bc9zcliYKQqeUUSviw/view?usp=sharing"
+                    target="_blank"
+                    >Data Visualization&nbsp;
+                    <i class="fa-solid fa-up-right-from-square"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="text-start">
+                  <a
+                    class="text-reset"
+                    href="https://drive.google.com/file/d/1r8bf2f8Xd2qfyfm-as4ty15tQF3xm0wG/view?usp=sharing"
+                    target="_blank"
+                    >Relational Database&nbsp;
+                    <i class="fa-solid fa-up-right-from-square"></i
+                  ></a>
+                </td>
+                <td colspan="2" class="text-start">
+                  <a
+                    class="text-reset"
+                    href="https://drive.google.com/file/d/17GUIlacEmZp8HXPF1Nm9TGxpO9tI8Gv7/view?usp=sharing"
+                    target="_blank"
+                    >Back End Development and APIs&nbsp;
+                    <i class="fa-solid fa-up-right-from-square"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td colspan="3" class="text-start">
+                  <a
+                    class="text-reset"
+                    href="https://drive.google.com/file/d/1ogOvw2fX28womiI2TcFlJoaCSOI9NAWD/view?usp=sharing"
+                    target="_blank"
+                    >Quality Assurance&nbsp;
+                    <i class="fa-solid fa-up-right-from-square"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center pt-4">
+                  <i class="fa-solid fa-chalkboard-user"></i>
+                </td>
+                <td colspan="3" class="pt-4">
+                  <span class="fst-italic fw-semibold"
+                    >2021 / 2022 - Semos Education:</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="text-start">
+                  <a
+                    class="text-reset"
+                    href="https://drive.google.com/file/d/1bVSLe27w20zeRef6jLsmj2X-Nm3gS_OB/view?usp=sharing"
+                    target="_blank"
+                    >Software Developer&nbsp;
+                    <i class="fa-solid fa-up-right-from-square"></i></a
+                  ><br />
+                </td>
+                <td colspan="2" class="text-start">
+                  <a
+                    class="text-reset"
+                    href="https://drive.google.com/file/d/1PxGOcTxqZBQz3FjmmjOqlqKMuPlTe9XH/view?usp=sharing"
+                    target="_blank"
+                    >IT Administrator&nbsp;
+                    <i class="fa-solid fa-up-right-from-square"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="text-start">
+                  <a
+                    class="text-reset"
+                    href="https://drive.google.com/file/d/1wORNgOaZ5Mp7P-PWXMuxTnk-LhTY0huB/view?usp=sharing"
+                    target="_blank"
+                    >Data Analyst&nbsp;
+                    <i class="fa-solid fa-up-right-from-square"></i
+                  ></a>
+                </td>
+                <td colspan="2" class="text-start">
+                  <a
+                    class="text-reset"
+                    href="https://drive.google.com/file/d/1hRrbwj_8DfO9o4BVUFpxORfq8rsl-gzn/view?usp=sharing"
+                    target="_blank"
+                    >AI Practitioner&nbsp;
+                    <i class="fa-solid fa-up-right-from-square"></i
+                  ></a>
+                </td>
+              </tr>
+            </table>
+          </section>
+          <!-- Section Informal Education END -->
+          <!-- Section Formal Education START -->
+          <section>
+            <h4 class="title font-weight-light mb-1">
+              <i class="fa-solid fa-graduation-cap"></i>&nbsp; Formal Education
+            </h4>
+            <hr />
+            <table class="table table-sm table-hover">
+              <tr>
+                <td class="text-start">
+                  Master's degree in Economics<br />University of Novi Sad<br />Faculty
+                  of Economics
+                </td>
+                <td
+                  class="text-end"
+                  style="width: 5%; vertical-align: middle; text-align: center"
+                >
+                  <i class="fa-solid fa-computer"></i>
+                </td>
+                <td style="vertical-align: middle">
+                  Study programme:<br />Business Information Systems -<br />Information
+                  Engineering
+                </td>
+              </tr>
+              <tr>
+                <td class="text-start" style="vertical-align: middle">
+                  School of Economics<br />Novi Sad
+                </td>
+                <td
+                  class="text-end"
+                  style="width: 5%; vertical-align: middle; text-align: center"
+                >
+                  <i class="fa-solid fa-chart-line"></i>
+                </td>
+                <td style="vertical-align: middle">
+                  Education profile:<br />Economic technician<br />(Valedictorian)
+                </td>
+              </tr>
+            </table>
+          </section>
+          <!-- Section Formal Education END -->
+        </article>
+        <!-- Article END -->
+      </div>
+      <a href="#" class="back-to-top text-reset d-print-none"
+        ><i class="fa-solid fa-angle-up fs-1 text-secondary"></i
+      ></a>
+    </main>
+
+    <script>
+      $(function () {
+        $('.card').click(function () {
+          $('#profile').toggleClass('animated hinge');
+        });
+
+        $('a[data-email]').each(function () {
+          this.href =
+            'mailto:' +
+            $(this)
+              .attr('data-email')
+              .replace('[at]', '@')
+              .replace(/\[dot]/g, '.');
+          this.innerHTML = this.href.replace('mailto:', '');
+        });
+
+        $('a[data-tel]').each(function () {
+          this.href =
+            'tel:' +
+            $(this)
+              .attr('data-tel')
+              .replace('[country]', '+381')
+              .replace('[operator]', '64')
+              .replace('[number]', '1972001');
+          this.innerHTML = this.href.replace('tel:', '');
+        });
+      });
+
+      const card = document.querySelector('#card');
+      const article = document.querySelector('article');
+      const aside = document.querySelector('aside');
+
+      const btnPrint = document.querySelector('#print-resume');
+
+      const moveProfilePicture = () => {
+        article.insertAdjacentElement('afterbegin', card);
+        window.print();
+      };
+
+      btnPrint.addEventListener('click', moveProfilePicture);
+
+      window.onbeforeprint = () => {
+        moveProfilePicture();
+      };
+
+      window.onafterprint = () => {
+        aside.insertAdjacentElement('afterbegin', card);
+      };
+    </script>
+  </body>
+</html>
